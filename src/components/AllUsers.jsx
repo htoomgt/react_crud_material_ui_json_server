@@ -44,10 +44,33 @@ const AllUsers = () => {
   }
 
   return (
-    <div>
-        <br/> <br/> <br/>
-        <h1> All Users </h1>
-    </div>
+    <StyledTable>
+      <TableHead>
+        <THead>
+          <TableCell>Id</TableCell>
+          <TableCell>Name</TableCell>
+          <TableCell>Username</TableCell>
+          <TableCell>Email</TableCell>
+          <TableCell>Phone</TableCell>
+          <TableCell></TableCell>
+        </THead>
+      </TableHead>
+      <TableBody>
+        {users.map((user) => (
+          <TRow key={user.id}>
+              <TableCell>{user.id}</TableCell>
+              <TableCell>{user.name}</TableCell>
+              <TableCell>{user.username}</TableCell>
+              <TableCell>{user.email}</TableCell>
+              <TableCell>{user.phone}</TableCell>
+              <TableCell>
+                <Button color="primary" variant="contained" style={{marginRight:10}} component={Link} to={`/edit/${user.id}`}>Edit</Button>
+                <Button color="secondary" variant="contained" onClick={() => deleteUserData(user.id)} >Delete</Button>
+              </TableCell>              
+          </TRow>
+        ))}
+      </TableBody>
+    </StyledTable>
     
   )
 }

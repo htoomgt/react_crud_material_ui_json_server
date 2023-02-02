@@ -12,9 +12,10 @@ import NotFound from './components/NotFound';
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      
 
       <BrowserRouter>
+        <NavBar />
         <Routes>
           <Route path="/" element={<CodeForInterview />} />
           <Route path="/all" element={<AllUsers />} />
