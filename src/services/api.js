@@ -13,7 +13,7 @@ export const getUsers = async (id) => {
     }
 }
 
-export const addUsers = async (user) => {
+export const addUser = async (user) => {
     return  await axios.post(`${userUrl}`, user);
 }
 
