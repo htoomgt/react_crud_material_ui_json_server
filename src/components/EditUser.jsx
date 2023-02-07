@@ -31,6 +31,8 @@ const EditUser = () => {
 
   useEffect(() => {
     loadUserDetails();
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const loadUserDetails =  async() => {
@@ -39,12 +41,12 @@ const EditUser = () => {
   }
 
   const editUserDetails = async () => {
+    // console.log(user);
     await  editUser(id, user);
     navigate('/all');
   }
 
-  const onValueChange = (e) => {
-    console.log(e.target.value);
+  const onValueChange = (e) => {    
     setUser({...user, [e.target.name] : e.target.value})
   }
 
@@ -57,10 +59,10 @@ const EditUser = () => {
         <Input onChange={(e) => onValueChange(e)} name="name"  value={name}  id="txtName" aria-describedby="my-helper-text" />
       </FormControl>
 
-      <FormControl>
+      {/* <FormControl>
         <InputLabel htmlFor="txtUsername"> Username</InputLabel>
         <Input onChange={(e) => onValueChange(e)} name="username"  value={username}  id="txtUsername" aria-describedby="my-helper-text" />
-      </FormControl>
+      </FormControl> */}
 
       <FormControl>
         <InputLabel htmlFor="txtUsername"> Email</InputLabel>
