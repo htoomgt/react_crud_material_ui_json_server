@@ -23,10 +23,16 @@
     },
     {
       "name": "John Doe",
+<<<<<<< HEAD
       "userName": "",
       "email": "johndoe@gmail.com",
       "phone": "092343232232123",
       "username": "johndoe",
+=======
+      "email": "johndoe1@gmail.com",
+      "phone": "094924962946921",
+      "username": "johndoe1",
+>>>>>>> 52d6868a78bb0cae76c5fd4f55624d723cc19932
       "id": 8
     }
   ]
