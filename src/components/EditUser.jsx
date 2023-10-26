@@ -63,12 +63,12 @@ const EditUser = () => {
       </FormControl>
 
       <FormControl>
-        <InputLabel htmlFor="txtUsername"> Email</InputLabel>
+        <InputLabel htmlFor="txtEmail"> Email</InputLabel>
         <Input onChange={(e) => onValueChange(e)} name="email"  value={email}  id="txtEmail" aria-describedby="my-helper-text" />
       </FormControl>
 
       <FormControl>
-        <InputLabel htmlFor="txtUsername"> Phone</InputLabel>
+        <InputLabel htmlFor="txtPhone"> Phone</InputLabel>
         <Input onChange={(e) => onValueChange(e)} name="phone"  value={phone}  id="txtPhone" aria-describedby="my-helper-text" />
       </FormControl>
 

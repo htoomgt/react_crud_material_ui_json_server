@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "name": "Mohd Shami",
-      "username": "mohdshami",
-      "email": "shami@gmail.com",
-      "phone": "7896547896",
+      "name": "Mohd Shami 2",
+      "username": "mohdshami 2",
+      "email": "shami2@gmail.com",
+      "phone": "78965478962",
       "id": 4
     },
     {
@@ -22,11 +22,11 @@
       "id": 7
     },
     {
-      "name": "John Doe1",
+      "name": "John Doe",
       "userName": "",
-      "email": "johndoe1@gmail.com",
-      "phone": "094924962946921",
-      "username": "johndoe1",
+      "email": "johndoe@gmail.com",
+      "phone": "092343232232123",
+      "username": "johndoe",
       "id": 8
     }
   ]
